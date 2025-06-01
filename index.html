@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LippWangsaff Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <div class="top-right-controls">
+        <button id="theme-toggle" class="theme-toggle-button" aria-label="Toggle Theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+        <button id="nav-toggle" class="nav-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+            <span class="hamburger"></span>
+        </button>
+    </div>
+
+    <nav id="nav-menu" class="nav-menu">
+        <a href="#home" class="nav-item" style="--i:0;"><span>Home</span><i class="fas fa-home"></i></a>
+        <a href="#about" class="nav-item" style="--i:1;"><span>About</span><i class="fas fa-user-astronaut"></i></a>
+        <a href="#projects" class="nav-item" style="--i:2;"><span>Creations</span><i class="fas fa-flask"></i></a>
+        <a href="#skills" class="nav-item" style="--i:3;"><span>Abilities</span><i class="fas fa-wand-sparkles"></i></a>
+        <a href="#gallery" class="nav-item" style="--i:4;"><span>Gallery</span><i class="fas fa-images"></i></a>
+        <a href="#elaina-chat" class="nav-item" style="--i:5;"><span>Elaina</span><i class="fas fa-hat-wizard"></i></a>
+    </nav>
+
+    <main id="main-content">
+        <section id="home" class="hero section">
+            <div class="hero-content animate-on-scroll fade-in-up">
+                <h1 class="hero-title neon-text-white">LippWangsaff</h1>
+                <p class="hero-subtitle neon-text-secondary">Web Artisan | Code Alchemist | Digital Explorer</p>
+                <a href="#projects" class="cta-button">Jelajahi Karyaku</a>
+            </div>
+            <div class="scroll-down-indicator">
+                <span></span>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container animate-on-scroll fade-in">
+                <h2 class="section-title neon-text-secondary">Sedikit Tentangku</h2>
+                <div class="about-content">
+                     <div class="about-image-container">
+                        <div class="profile-image-wrapper">
+                            <img src="https://files.catbox.moe/v4cgkd.webp" alt="Foto LippWangsaff" class="profile-img">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>Yo! Namaku LippWangsaff. Aku adalah perajin web yang senang meramu kode menjadi pengalaman digital yang memukau dan berfungsi dengan baik. Dunia teknologi itu seperti buku sihir yang tak ada habisnya, dan aku suka mempelajari mantra-mantra baru (baca: teknologi)!</p>
+                        <p>Dari tampilan depan yang memikat hingga logika belakang layar yang solid, aku berusaha menciptakan solusi yang bukan hanya indah dipandang, tapi juga tangguh dan intuitif. Mari ciptakan sesuatu yang ajaib bersama!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2 class="section-title neon-text-secondary animate-on-scroll fade-in">Beberapa Kreasiku</h2>
+                <div class="project-grid">
+                    <div class="project-card animate-on-scroll zoom-in">
+                        <img src="https://files.catbox.moe/4r5x7a.webp" alt="Project 1">
+                        <div class="project-info">
+                            <h3 class="neon-text-primary">Elaina AI Chatbot</h3>
+                            <p>Chatbot interaktif dengan karakter Elaina, menggunakan Gemini API untuk respons cerdas.</p>
+                            <a href="#" onclick="document.getElementById('chat-toggle').click(); return false;" class="project-link">Coba Sekarang <i class="fas fa-comments"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card animate-on-scroll zoom-in">
+                        <img src="https://files.catbox.moe/lnh7c1.webp" alt="Project 2">
+                        <div class="project-info">
+                            <h3 class="neon-text-primary">Portofolio Interaktif</h3>
+                            <p>Portofolio yang sedang kamu lihat, menampilkan proyek, skill, dan galeri dengan sentuhan sihir.</p>
+                            <a href="https://github.com/LippWangsaff/portofolio-elaina" target="_blank" class="project-link">Intip Kode <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                     <div class="project-card animate-on-scroll zoom-in">
+                        <img src="https://via.placeholder.com/400x250/777777/dddddd?text=Proyek+Mendatang" alt="Project 3">
+                        <div class="project-info">
+                            <h3 class="neon-text-primary">Proyek Selanjutnya</h3>
+                            <p>Sihir baru sedang diramu... Nantikan kreasi memukau berikutnya!</p>
+                            <a href="#" class="project-link disabled-link">Segera Hadir <i class="fas fa-hourglass-half"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <section id="skills" class="section skills-section">
+            <div class="container">
+                 <h2 class="section-title neon-text-secondary animate-on-scroll fade-in">Jurus Andalanku</h2>
+                 <div class="skills-grid">
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.1s;"><i class="fab fa-html5 neon-icon"></i> HTML5</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.2s;"><i class="fab fa-css3-alt neon-icon"></i> CSS3</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.3s;"><i class="fab fa-js-square neon-icon"></i> JavaScript</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.4s;"><i class="fab fa-react neon-icon"></i> React</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.5s;"><i class="fab fa-node-js neon-icon"></i> Node.js</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.6s;"><i class="fas fa-database neon-icon"></i> Databases</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.7s;"><i class="fab fa-git-alt neon-icon"></i> Git & GitHub</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.8s;"><i class="fas fa-palette neon-icon"></i> UI/UX Design</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 0.9s;"><i class="fas fa-terminal neon-icon"></i> CLI Magic</div>
+                    <div class="skill-item animate-on-scroll fade-in-up" style="--delay: 1.0s;"><i class="fas fa-bolt neon-icon"></i> API Integration</div>
+                 </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <h2 class="section-title neon-text-secondary animate-on-scroll fade-in">Gallery</h2>
+            </div>
+             <div class="gallery-scroll-container" id="gallery-container">
+                <div class="gallery-scroll-wrapper" id="gallery-wrapper">
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/q32mqs.jpg" alt="Gallery 1" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/0glcx9.jpg" alt="Gallery 2" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/hfpfod.jpg" alt="Gallery 3" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/vyp943.jpg" alt="Gallery 4" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/uoo2mr.jpg" alt="Gallery 5" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/5j7x2u.webp" alt="Gallery 6" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/e5p64l.webp" alt="Gallery 7" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/2o52k5.webp" alt="Gallery 8" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/fnyu0q.webp" alt="Gallery 9" loading="lazy"></div>
+                    <div class="gallery-item parallelogram"><img src="https://files.catbox.moe/0t3x4z.webp" alt="Gallery 10" loading="lazy"></div>
+                 </div>
+            </div>
+        </section>
+    </main>
+
+    <button id="whatsapp-toggle" class="whatsapp-toggle-button" aria-label="Hubungi via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <div id="whatsapp-overlay" class="whatsapp-overlay">
+        <div class="whatsapp-overlay-content">
+            <button id="whatsapp-close" class="whatsapp-close-button" aria-label="Tutup">×</button>
+            <h3 class="neon-text-whatsapp">Ingin Mengobrol Langsung?</h3>
+            <p>Punya ide proyek yang menarik, pertanyaan spesifik, atau sekadar ingin bertukar cerita tentang petualangan di dunia kode? Aku selalu terbuka untuk percakapan!</p>
+            <p>Cara tercepat untuk menghubungiku adalah melalui WhatsApp. Klik tombol di bawah!</p>
+            <a id="whatsapp-link" href="https://wa.me/6281234567890?text=Halo%20LippWangsaff,%20saya%20tertarik%20dengan%20portofolio%20Anda%20dan%20ingin%20bertanya..." target="_blank" class="whatsapp-action-button">
+                <i class="fab fa-whatsapp"></i> Kirim Pesan WhatsApp
+            </a>
+             <p class="whatsapp-note">Langsung terhubung denganku!</p>
+        </div>
+    </div>
+
+    <button id="chat-toggle" class="chat-toggle-button" aria-label="Toggle Chat Elaina">
+        <i class="fas fa-hat-wizard"></i>
+        <i class="fas fa-times close-icon"></i>
+    </button>
+
+    <div id="chat-container" class="chat-container">
+        <div class="chat-header">
+            <h3>Elaina</h3>
+            <button id="chat-close" class="chat-close-button">×</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="message ai">Fufu~ Ara, ada perlu apa denganku? Watashi, sang Penyihir Pengelana, Elaina. Mau tanya soal sihir? Atau... soal aku? ♪</div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ketik di sini...">
+            <button id="send-button"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
